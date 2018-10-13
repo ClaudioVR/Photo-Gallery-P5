@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Photo gallery project</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="js/baguetteBox.js-dev/dist/baguetteBox.min.css">
+</head>
+
+<body>
+	<div class="container">
+
+		<div class="search-bar">
+			<input type="text" id="search" class="search" placeholder="Search here" data-list=".list a">
+		</div>
+
+		<div class="gallery">
+			<ul class="list">
+				<li><a href="photos/01.jpg" data-caption="Hay Bales - I love hay bales. Took this snap on a drive through the countryside past some straw fields.">
+				<img class="thumb" src="photos/thumbnails/01.jpg" alt="Hay Bales" data-caption="Hay Bales I love hay bales. Took this snap on a drive through the countryside past some straw fields."></a>
+				</li>
+
+				<li><a href="photos/02.jpg" data-caption="Lake - The lake was so calm today. We had a great view of the snow on the mountains from here.">
+				<img class="thumb" src="photos/thumbnails/02.jpg" alt="Lake" data-caption="Lake The lake was so calm today. We had a great view of the snow on the mountains from here."></a>
+				</li>
+
+				<li><a href="photos/03.jpg" data-caption="Canyon - I hiked to the top of the mountain and got this picture of the canyon and trees below.">
+					<img class="thumb" src="photos/thumbnails/03.jpg" alt="Canyon" data-caption="Canyon I hiked to the top of the mountain and got this picture of the canyon and trees below."></a>
+				</li>
+
+				<li><a href="photos/04.jpg" data-caption="Iceberg - It was amazing to see an iceberg up close, it was so cold but didn’t snow today.">
+					<img class="thumb" src="photos/thumbnails/04.jpg" alt="Iceberg" data-caption="Iceberg It was amazing to see an iceberg up close, it was so cold but didn’t snow today."></a>
+				</li>
+
+				<li><a href="photos/05.jpg" data-caption="Desert - The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.">
+					<img class="thumb" src="photos/thumbnails/05.jpg" alt="Desert" data-caption="Desert The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons."></a>
+				</li>
+
+				<li><a href="photos/06.jpg" data-caption="Fall - Fall is coming, I love when the leaves on the trees start to change color.">
+					<img class="thumb" src="photos/thumbnails/06.jpg" alt="Fall" data-caption="Fall Fall is coming, I love when the leaves on the trees start to change color."></a>
+				</li>
+
+				<li><a href="photos/07.jpg" data-caption="Plantation - I drove past this plantation yesterday, everything is so green!">
+					<img class="thumb" src="photos/thumbnails/07.jpg" alt="Plantation" data-caption="Plantation I drove past this plantation yesterday, everything is so green!"></a>
+				</li>
+
+				<li><a href="photos/08.jpg" data-caption="Dunes - My summer vacation to the Oregon Coast. I love the sandy dunes!">
+					<img class="thumb" src="photos/thumbnails/08.jpg" alt="Dunes" data-caption="Dunes - My summer vacation to the Oregon Coast. I love the sandy dunes!"></a>
+				</li>
+
+				<li><a href="photos/09.jpg" data-caption="Countryside Lane - We enjoyed a quiet stroll down this countryside lane.">
+					<img class="thumb" src="photos/thumbnails/09.jpg" alt="Countryside Lane" data-caption="Countryside Lane We enjoyed a quiet stroll down this countryside lane."></a>
+				</li>
+
+				<li><a href="photos/10.jpg" data-caption="Sunset - Sunset at the coast! The sky turned a lovely shade of orange.">
+					<img class="thumb" src="photos/thumbnails/10.jpg" alt="Sunset" data-caption="Sunset Sunset at the coast! The sky turned a lovely shade of orange."></a>
+				</li>
+
+				<li><a href="photos/11.jpg" data-caption="Cave - I did a tour of a cave today and the view of the landscape below was breathtaking.">
+					<img class="thumb" src="photos/thumbnails/11.jpg" alt="Cave" data-caption="Cave I did a tour of a cave today and the view of the landscape below was breathtaking."></a>
+				</li>
+
+				<li><a href="photos/12.jpg" data-caption="Bluebells - I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.">
+					<img class="thumb" src="photos/thumbnails/12.jpg" alt="Bluebells" data-caption="Bluebells - I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in."></a>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="js/baguetteBox.js-dev/dist/baguetteBox.min.js"></script>
+	<script src="js/HideSeek-master/jquery.hideseek.min.js"></script>
+
+
+
+	<script>
+		// baguetteBox.js
+		baguetteBox.run('.gallery', {
+			animation: 'fadeIn',
+			overlayBackgroundColor: 'rgba(0,0,0,1)'
+		});
+
+
+		//hideseek plugin
+		$('document').ready(function() {
+			$('#search').hideseek({
+				attribute: 'data-caption'
+			});
+		});
+
+	</script>
+
+
+
+</body>
+
+</html>
