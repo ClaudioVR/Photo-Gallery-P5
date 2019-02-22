@@ -1,6 +1,11 @@
-# Photo Gallery P5
+Photo Gallery project where I make use of two jQuery plugins, as I start to understand and play around with this js library.
 
-JS Plugins
+Check it out here: https://claudiovr.github.io/Photo-Gallery-P5/
+
+
+
+
+JS Plugins I used: 
 
 1.Lightbox:
 		BaguetteBox
