@@ -1,4 +1,5 @@
-Photo Gallery project where I make use of two jQuery plugins, as I start to understand and play around with this js library.
+A simple Photo Gallery project where I make use of jQuery plugins, to create modal windows and carousels, as well as a search box. 
+
 
 Check it out here: https://claudiovr.github.io/Photo-Gallery-P5/
 
